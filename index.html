@@ -72,22 +72,30 @@
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
+
+                <!--START OF DICE-->
+                <!--Dice is separated into rows by breaks -->
+                <!--So 3 Rows -->
                 <div id="dice1" class="cell dice clickable shadowed">
                         <div class="dice-dot num2 num3 num4 num5 num6"></div>
-                        <div class="dice-dot right num5 num6"></div><br />
-                        <div class="dice-dot num4 num6"></div>
+                        <div class="dice-dot right     num4 num5 num6"></div>
+                        <br/>
+                        <div class="dice-dot num6"></div>
                         <div class="dice-dot num1 num5 num3"></div>
-                        <div class="dice-dot num6"></div><br />
+                        <div class="dice-dot num6"></div>
+                        <br/>
                         <div class="dice-dot num4 num5 num6"></div>
                         <div class="dice-dot num2 num3 num4 num5 num6 right"></div>
                 </div>
                 <div class="cell"></div>
                 <div id="dice2" class="cell dice clickable shadowed">
-                        <div class="dice-dot num2 num3 num5 num6"></div>
-                        <div class="dice-dot right num4 num5 num6"></div><br />
-                        <div class="dice-dot num4 num6"></div>
+                        <div class="dice-dot num2 num3 num4 num5 num6"></div>
+                        <div class="dice-dot right num4 num5 num6"></div>
+                        <br/>
+                        <div class="dice-dot num6"></div>
                         <div class="dice-dot num1 num5 num3"></div>
-                        <div class="dice-dot num6"></div><br />
+                        <div class="dice-dot num6"></div>
+                        <br/>
                         <div class="dice-dot num4 num5 num6"></div>
                         <div class="dice-dot num2 num3 num4 num5 num6 right"></div>
                 </div>
@@ -163,10 +171,10 @@
                         <div id="intro" class="popup-page" style="display:none;">
                                 <div class="popup-title">Welcome to Monopoly</div>
                                 <div class="popup-content">Please choose how many players?<br /><input id="num-of-players" type="text"><button class="clickable">START</button><br>
-                                <div class="invalid-error" >Number of players must be between 1 and 4</div></div>
+                                <div class="invalid-error" >Number of players must be between 1 and 6</div></div>
                         </div>
                         <div id="buy" class="popup-page" style="display:none;">
-                                <div class="popup-title">This cell is available for sale!</div>
+                                <div class="popup-title">This property is available for sale!</div>
                                 <div class="popup-content">Do you want to buy it for <span class="cell-price"> </span>?<br />
                                 <button id="yes" class="clickable" >YES</button>
                                 <button id="no" class="clickable" >NO</button><br>
@@ -200,7 +208,18 @@
                                         <button id="ok" class="clickable">OK</button>
                                 </div>
                         </div>
+
+                        <div id="broke" class="popup-page" style="...">
+                                <div class="popup-title">You're Broke!</div>
+                                <div class="popup-content">Good game mate.</div>
+                                <div id="text-placeholder"></div>
+                                        <button id="ok" class="clickable">Until next time.</button>
+
+
+                        </div>
+
                 </div>
         </div>
         </div>
+    </body>
 </html>
